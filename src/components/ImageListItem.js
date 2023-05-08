@@ -7,7 +7,7 @@ const ImageListItem = ({img}) => {
           <img src={img.download_url} className="img" alt="img"/>   
         </a>
         <div className="card_banner">
-            <img src={img.download_url} className="card_thumb"/>
+            <img src={img.download_url} className="card_thumb" alt="urlimg"/>
             <div className="card_text">
                 <h3 className="card_title">{img.author}</h3>
                 <div className="card_status">
