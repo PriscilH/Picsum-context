@@ -1,10 +1,13 @@
-
 import { useState } from 'react';
 import './App.css';
 import ImageList from './components/ImageList';
+import useScrollPosition from './hooks/useScrollPosition';
 
 function App() {
   const [imageList, setImageList] = useState(DATA);
+  const {isBottom} = useScrollPosition();
+
+  console.log(isBottom);
   return (
     <div className="App">
       <h1>Rand'images</h1>
